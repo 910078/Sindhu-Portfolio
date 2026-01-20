@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Chityala Sindhu Madhavi | Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ---------- GLOBAL ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f6f8ff;
+    color: #333;
+}
+
+/* ---------- NAVBAR ---------- */
+nav {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    padding: 12px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    z-index: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 8px 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #3f51b5;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #1f2f99;
+}
+
+/* ---------- HEADER ---------- */
+header {
+    background: linear-gradient(135deg, #dbe6ff, #f1f5ff);
+    padding: 70px 20px;
+    text-align: center;
+    animation: fadeDown 1.2s ease;
+}
+
+header h1 {
+    color: #2c3e80;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    animation: fadeUp 1s ease;
+}
+
+h2 {
+    color: #3f51b5;
+    border-bottom: 2px solid #dde3ff;
+    padding-bottom: 6px;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    background: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* ---------- SKILLS ---------- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill {
+    background: #eef2ff;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* ---------- CERTIFICATES ---------- */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cert-card {
+    background: #f3f6ff;
+    padding: 20px;
+    border-radius: 14px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+}
+
+.cert-card button {
+    margin-top: 10px;
+    padding: 10px 16px;
+    background: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cert-card button:hover {
+    background: #2c3e9e;
+}
+
+/* ---------- BUTTON ---------- */
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #3f51b5;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #2c3e9e;
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: #e8ecff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ---------- MODAL ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: white;
+    margin: 5% auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.modal iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.close {
+    text-align: right;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ---------- ANIMATIONS ---------- */
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#summary">Summary</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#project">Project</a></li>
+<li><a href="#certificates">Certificates</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+<h1>Chityala Sindhu Madhavi</h1>
+<p>B.Tech CSE Student | Machine Learning Enthusiast</p>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+I am Chityala Sindhu Madhavi, currently studying B.Tech 3rd year in Computer Science Engineering
+at Ravindra College of Engineering for Women with <strong>82% up to 5th semester</strong>.
+I completed my Intermediate at Dr. B. R. Ambedkar Gurukulam (2021–2023) with <strong>80%</strong>
+and my schooling at Sarvepalli Vidya Nilayam High School (2021) with <strong>99%</strong>.
+</div>
+</section>
+
+<section id="summary">
+<h2>Professional Summary</h2>
+<div class="card">
+Enthusiastic B.Tech CSE student with strong foundations in programming and problem-solving.
+Passionate about modern technologies, Machine Learning, and real-world project development.
+Seeking entry-level opportunities to apply and enhance technical skills.
+</div>
+</section>
+
+<section id="skills">
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">Data Structures</div>
+<div class="skill">Algorithms</div>
+<div class="skill">Problem Solving</div>
+<div class="skill">Basic Machine Learning</div>
+</div>
+</section>
+
+<section>
+<h2>Soft Skills</h2>
+<div class="skills-grid">
+<div class="skill">Communication</div>
+<div class="skill">Teamwork</div>
+<div class="skill">Time Management</div>
+<div class="skill">Adaptability</div>
+<div class="skill">Quick Learner</div>
+<div class="skill">Analytical Thinking</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Work Experience (Fresher)</h2>
+<div class="card">
+<ul>
+<li>Developed responsive web pages using HTML & CSS.</li>
+<li>Completed academic projects in Java and Python.</li>
+<li>Practiced DSA and problem-solving on coding platforms.</li>
+<li>Built and analyzed Machine Learning notebooks on Kaggle.</li>
+</ul>
+</div>
+</section>
+
+<section id="project">
+<h2>Project</h2>
+<div class="card">
+<strong>Machine Learning Project – Kaggle</strong><br><br>
+<a href="https://www.kaggle.com/code/chityalasindhu/notebook586feedf57/notebook" target="_blank">
+🔗 View Project on Kaggle
+</a>
+</div>
+</section>
+
+<section id="certificates">
+<h2>Certificates</h2>
+<div class="certificates">
+
+<div class="cert-card">
+<h4>Fortinet Cybersecurity</h4>
+<button onclick="openModal('sindhu-fortinet.pdf')">View</button>
+</div>
+
+<div class="cert-card">
+<h4>Machine Learning Onramp</h4>
+<button onclick="openModal('sindhu-ml.pdf')">View</button>
+</div>
+
+<div class="cert-card">
+<h4>Palo Alto Cybersecurity</h4>
+<button onclick="openModal('sindhu-paloalto.pdf')">View</button>
+</div>
+
+<div class="cert-card">
+<h4>CodeTantra</h4>
+<button onclick="openModal('sindhu-codetantra.pdf')">View</button>
+</div>
+
+<div class="cert-card">
+<h4>GeeksforGeeks</h4>
+<button onclick="openModal('sindhu-gfg.pdf')">View</button>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+📞 <strong>Mobile:</strong> 8174707273 <br>
+📧 <strong>Email:</strong> chityalasindhu1@gmail.com <br><br>
+<a href="mailto:chityalasindhu1@gmail.com" class="btn">Contact Me</a>
+</div>
+</section>
+
+<footer>
+© 2026 Chityala Sindhu Madhavi
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="certModal">
+<div class="modal-content">
+<div class="close" onclick="closeModal()">✖</div>
+<iframe id="certFrame"></iframe>
+</div>
+</div>
+
+<script>
+function openModal(file) {
+    document.getElementById("certModal").style.display = "block";
+    document.getElementById("certFrame").src = file;
+}
+
+function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+    document.getElementById("certFrame").src = "";
+}
+</script>
+
+</body>
+</html>
